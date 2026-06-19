@@ -63,3 +63,7 @@ Le projet utilise les variables suivantes :
 - `HDFS_USER` : utilisateur HDFS (défaut : `root`)
 - `HDFS_BASE_PATH` : base du dossier de stockage (défaut : `/user/root/legorafi_pipeline`)
 
+## Détection de fake_news
+
+Le projet communique avec une API lancé en localhost sur le port 5001. On envoie la combinaison Titre de l'article + Contenu de l'article dans une requête POST afin de déterminer si c'est une fake news ou non. On récupère ensuite la réponse qu'on vient stocker directement dans le dataframe final, dataframe qu'on vient ensuite envoyer dans HDFS.
+
