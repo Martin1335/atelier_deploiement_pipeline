@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from time import sleep
 
 
-def scrape_legorafi(max_pages=1, sleep_time=0.5, user_agent="Mozilla/5.0"):
+def scrape_legorafi(max_pages=1, sleep_time=0.1, user_agent="Mozilla/5.0"):
     """
     Scrape les articles du Gorafi et retourne un DataFrame.
 

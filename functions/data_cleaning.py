@@ -53,10 +53,4 @@ def clean_legorafi_dataframe(df: pd.DataFrame) -> pd.DataFrame:
         errors="coerce"
     )
 
-    # ==========================
-    # 5. Réindexation propre
-    # ==========================
-    df = df.reset_index(drop=True)
-    df.insert(0, "ID", range(1, len(df) + 1))
-
     return df
